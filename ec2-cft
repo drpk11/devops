@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: my first ec2 cft
+# Resources section
+Resources:
+  MyEC2Instance: 
+    Type: AWS::EC2::Instance
+
+
+or 
+    Resources:
+      Instance:
+          Type: AWS::EC2::Instance
+          Properties: {}
