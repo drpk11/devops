@@ -51,3 +51,27 @@ Docker components:
 We have a docker client (like build, run, deploy) which is CLI these instruction are taken by docker daemon (contains container and images) which is the heart od docker system performs or executes action of the instruction provided , after executing these it will push to external registry .
 
 Docker add - can copy files from url using curl or wget ; where as Docker copy file from host to container
+
+
+--------------------
+
+create a container: 
+#check if u have base image (ex:ubuntu), then create a container
+docker run -it --name container1 ubuntu
+
+#update 
+apt-get update
+#setup ssh
+apt-get install openssh-server
+#install nano package
+apt-get install nano
+#change the authenticate password with yes by omitting probit password in /nano /etc/ssh/sshd_config file 
+#check the status
+service --status -all
+#set a password to 1st unbuntu cont
+passwd root
+#set a password
+#execute opeartions inside cont 
+docker exec -it cont1 bash 
+
+#similarly create a ubuntu cont 2 and install openserver-client on it. This is to establish connection btw 2 container, check whether cont1 ssh is started using docker ssh start command. Later, through conatiner 2 connect to cont 1 with the password which is setup in 1st cont.
