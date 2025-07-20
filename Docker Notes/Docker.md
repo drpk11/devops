@@ -32,9 +32,9 @@ Docker bind n volume
  For these issues we hv bind mounts : let say we hv a container on host , and a file which binds both conatainer n host, this means  the folder still hv info about the details even if the conatainer fails/ down , where suppose if we create another container this folder and be mount to container which exists on host and makes work better, here the host to be assigned to specific folder on container  Next volumes, here the host is built on volumes and volume has logical creation on ec2, host, external devices 
 
  Docker volume ls—shows list of volumes
-Docker volume create Dharani 
-Docker volume rm Dharani
-Docker volume inspect Dharani 
+Docker volume create aws_vol 
+Docker volume rm aws_vol
+Docker volume inspect aws_vol 
 
 
 Docker Networking:
