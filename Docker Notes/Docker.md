@@ -1,6 +1,6 @@
 Docker 
 
-Lets say VM’s which has its own OS with hypervisor have no.of ec2 instances or memory which is being unused or running out of memory, when thousands of GB is unused or have add sepate vm it is a serious loss for the business IT, there is a concept of containers where where is only 1 OS or VM/EC2 with Docker platform to run containers are light weight and have minimal OS ie  Base image (os +application dependencies +packages)
+Lets say VM’s which has its OS with hypervisor which have no.of ec2 instances or memory which is being unused or running out of memory, when thousands of GB is unused or have add separate vm it is a serious loss for the business IT, there is a concept of containers where only 1 OS or VM/EC2 with Docker platform to run containers. They are lightweight and have minimal OS, ie, Base image (os application dependencies packages)
 
 pull
  docker                   Run
