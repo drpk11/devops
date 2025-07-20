@@ -57,19 +57,26 @@ Docker add - can copy files from url using curl or wget ; where as Docker copy f
 
 create a container: 
 #check if u have base image (ex:ubuntu), then create a container
+
 docker run -it --name container1 ubuntu
 
 #update 
 apt-get update
+
 #setup ssh
 apt-get install openssh-server
+
 #install nano package
 apt-get install nano
+
 #change the authenticate password with yes by omitting probit password in /nano /etc/ssh/sshd_config file 
+
 #check the status
 service --status -all
+
 #set a password to 1st unbuntu cont
 passwd root
+
 #set a password
 #execute opeartions inside cont 
 docker exec -it cont1 bash 
